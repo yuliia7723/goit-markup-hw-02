@@ -1,0 +1,159 @@
+.background {
+  background-color: #2f303a;
+}
+
+.caption {
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: (14/16);
+  letter-spacing: 0.03em;
+}
+.desc-advance {
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  line-height: (14/24);
+  letter-spacing: 0.03em;
+}
+
+.title-main {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.title {
+  color: #212121;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.name {
+  color: #212121;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+.profession {
+  color: #757575;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.background-footer {
+  background-color: #2f303a;
+}
+.background-section {
+  background-color: #f5f4fa;
+}
+.body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+/* second page */
+
+.link {
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: calc(16 / 14);
+}
+.link:hover {
+  color: #2196f3;
+}
+.link:focus {
+  color: #2196f3;
+}
+.body {
+  font-family: Roboto;
+}
+
+.button {
+  color: #f5f4fa;
+  background: #f5f4fa;
+  cursor: pointer;
+  position: absolute;
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: calc(26 / 16);
+}
+.button:hover {
+  color: #2196f3;
+}
+.button:focus {
+  color: #2196f3;
+}
+.button:active {
+  color: #2196f3;
+}
+
+.subtitle {
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.text {
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.background-container {
+  background-color: #ffffff;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+.link-footer {
+  color: #ffffff;
+  position: absolute;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+}
+.link-footer:hover {
+  color: #2196f3;
+}
+.link-footer:focus {
+  color: #2196f3;
+}
+
+.studio {
+  font-weight: 500;
+}
+.portfolio {
+  color: #2196f3;
+  font-weight: 500;
+}
+.service {
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.button-all {
+  background-color: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.button-all :hover {
+  background-color: #2196f3;
+  color: var (--main-btn-color);
+}
+.button-all :focus {
+  color: #2f303a;
+}
+
+.body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.background-image {
+  background-color: #eeeeee;
+}
