@@ -1,11 +1,14 @@
 :root {
   --main-title-color: #212121;
   --second-title-color: #757575;
-  --main-btn-color: #2196f3;
-  --second-btn-color: #f5f4fa;
-  --main-background-color: #f5f5f5;
+  --main-btn-color:#f5f4fa ;
+  --second-btn-color:#2196F3;
+--main-background-color: #f5f5f5;
   --second-background-color: #f5f4fa;
   --background-footer-color: #2f303a;
+  --colr-header:#FFFFFF;
+  --color-container:#EEEEEE;
+
 }
 /* /главная страница */
 
@@ -28,8 +31,7 @@ body {
 }
 .nav-link {
   color: var(--main-title-color);
-
-  font-weight: 500;
+font-weight: 500;
   letter-spacing: 0.02em;
   line-height: calc(16 / 14);
   text-decoration: none;
@@ -44,14 +46,9 @@ body {
   color: #2196f3;
   cursor: pointer;
 }
-.logo-web:hover {
-  color: #212121;
-}
 .accent {
   color: #2196f3;
 }
-
-
 .contact-link {
   text-decoration: none;
 font-weight: 500;
@@ -66,22 +63,27 @@ color: #2196f3;
   color: #2196f3;
 }
 
-.button {
-  color: #ffffff ;
- background-color: var(--main-btn-color);
-cursor: pointer;
- position: absolute;
-font-weight: 500;
- letter-spacing: 0.03em;
+.button-main {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px ;
   line-height: calc(26 / 16);
+   letter-spacing: 0.03em;
+    text-transform: uppercase;
+  background-color:var(--second-btn-color);
+  color: var(--colr-header #FFFFFF);
+  cursor: pointer;
+
+
+ 
 }
-.button:hover {
+.button-main:hover {
   color: #2196f3;
 }
-.button:focus {
+.button-main:focus {
   color: #2196f3;
 }
-.button:active {
+.button-main:active {
   color: #2196f3;
 }
 .title-main {
@@ -94,17 +96,29 @@ font-weight: 500;
 .hero {
   background-color: var(--background-footer-color #2f303a);
 }
-.caption {
+
+/* /feature style */
+
+.feature {
+color:var(--main-background-color) ;
+}
+.feature-caption {
   color: var(--main-title-color);
 font-weight: 700;
   line-height: calc(14 / 16);
   letter-spacing: 0.03em;
 }
-.desc-advance {
+.feature-advance {
   color: var(--second-title-color);
   font-weight: 400;
   line-height: calc(14 / 24);
   letter-spacing: 0.03em;
+}
+
+/* /photo section */
+
+.box-img {
+color: var(--main-background-color);
 }
 
 .title {
@@ -112,26 +126,51 @@ font-weight: 700;
   font-weight: 700;
   font-family: "Roboto";
 }
+.background-section {
+  background-color: var(--second-background-color);
+}
 
-.name {
+/* team */
+
+.section-name {
   color: var(--main-title-color);
   font-weight: 500;
   font-family: "Roboto";
 }
-.profession {
+.section-profession {
   color: var(--second-title-color);
   font-weight: 400;
  
 }
-.background-footer {
-  background-color: var(--background-footer-color);
+
+/* addres */
+
+.footer {
+   background-color: var(--background-footer-color);
 }
-.background-section {
-  background-color: #f5f4fa;
+
+.link-footer {
+text-decoration: none;
+ color: var(--main-title-color);
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: calc(16 / 14);
+  text-decoration: none;
 }
+.link-footer:hover {
+  color: #2196f3;
+}
+.link-footer:focus {
+  color: #2196f3;
+}
+
 
 
 /* second page */
+.nav-header {
+  background-color:var(--colr-heder #FFFFFF) ;
+}
 
 .subtitle {
   line-height: calc(36 / 18);
@@ -144,6 +183,44 @@ font-weight: 700;
   color: var(--second-title-color);
 }
 
+
+/* filter */
+
+.button {
+   background-color: var(--second-background-co);
+}
+
+.button {
+ font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height:calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--main-title-color #212121);
+background-color: var( --second-btn-color #f5f4fa);
+}
+.button:hover {
+background-color: var(--second-btn-color#2196F3);
+  color: var(--colr-header#FFFFFF);
+  
+}
+.button:focus {
+  color: var(--background-footer-color);
+background-color: var(--second-btn-color#2196F3);
+}
+
+/* project */
+
+.project {
+background-color:var(--main-background-color #f5f5f5); 
+
+}
+.project-container {
+  background-color:var(--color-container); 
+
+}
 .footer {
   background-color: #2f303a;
 }
@@ -162,24 +239,6 @@ font-weight: 700;
 .link-footer:focus {
   color: #2196f3;
 }
-
-.button-all {
-  background-color: #f5f4fa;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-.button-all:hover {
-  color: #2196f3;
-  color: var (--main-btn-color);
-  background-color: var(--main-btn-color);
-}
-.button-all:focus {
-  color: var(--background-footer-color);
-  background-color: var(--main-btn-color);
-}
-
-
-
 .studio {
   color: #212121;
   display: inline-block;}
