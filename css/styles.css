@@ -6,16 +6,22 @@
 --main-background-color: #f5f5f5;
   --second-background-color: #f5f4fa;
   --background-footer-color: #2f303a;
-  --colr-header:#FFFFFF;
+  --color-header:#FFFFFF;
   --color-container:#EEEEEE;
 --color-logo:#000000;
 --color-logo-footer:#FFFFFF;
+--color-main-btn:#F5F5F5;
+--color-btn-text:#212121;
 
 }
 /* /главная страница */
 
 body {
   background-color:var(--main-background-color);
+  font-family: Roboto;
+  font-size: 14px;
+  color: var(--color-header);
+   color: var(--main-title-color);
  
 }
 .list {
@@ -30,8 +36,6 @@ font-weight: 500;
   letter-spacing: 0.02em;
   line-height: calc(16 / 14);
   text-decoration: none;
-  font-family: Roboto;
-font-style: Medium;
 }
 .nav-link:hover {
   color:var(--second-btn-color);
@@ -41,11 +45,11 @@ font-style: Medium;
 }
 .title-web {
   color: var(--color-logo);
-  cursor: pointer;
   font-family : Raleway;
-font-style : Bold;
 line-height: calc( 31 / 26 );
 letter-spacing: 0.03em;
+font-weight: 700;
+font-size: 26px;
 }
 .accent {
   color: var(--second-btn-color);
@@ -54,15 +58,15 @@ letter-spacing: 0.03em;
 font-style : Bold;
 line-height: calc( 31 / 26 );
   letter-spacing: 0.03em;
+  font-weight: 700;
 }
 .contact-link {
   text-decoration: none;
 font-weight: 500;
   line-height: calc( 16 / 14 );
   letter-spacing: 0.02em;
-  color: var(--second-btn-color);
-font-family: Roboto;
-font-style: Medium;
+  color:var(--second-title-color);
+
 }
 .contact-link:hover {
 color:var(--second-btn-color);
@@ -71,10 +75,8 @@ color:var(--second-btn-color);
   color:var(--second-btn-color);
 }
 .tel-link {
-  font-family:  Roboto;
-font-style:  Medium;
 font-size: 14px;
-color: #757575;}
+color:var( --second-title-color)}
 
 .tel-link:hover {
   color:var(--second-btn-color);
@@ -82,14 +84,14 @@ color: #757575;}
 .tel-link:focus {
   color:var(--second-btn-color);
 }
-.title-main {
-  color: #ffffff;
+.hero-title {
+  color:var(--color-header);
   font-weight: 900;
   line-height: calc( 60 / 44 );
   letter-spacing: 0.06em;
   background-color: var(--background-footer-color);
-  font-family: Roboto;
-font-style: Black;
+  font-size: 44px;
+text-transform: uppercase;
 }
 .hero {
   background-color: var(--background-footer-color);
@@ -102,21 +104,31 @@ font-style: Black;
   line-height: calc(26 / 16);
    letter-spacing: 0.03em;
     text-transform: uppercase;
-  background-color: var(--second-btn-color);
+  background-color: var(--color-main-btn);
   color: var(--colr-header);
   cursor: pointer;
-
-
- 
 }
 .button-main:hover {
-  color:var(--second-btn-color);
+  color:var(--main-btn-color);
+  background-color: var(--second-btn-color);
 }
 .button-main:focus {
   color:var(--second-btn-color);
 }
 .button-main:active {
   color:var(--second-btn-color);
+}
+.visually-hidden {
+   position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 
@@ -125,36 +137,31 @@ font-style: Black;
 .feature {
 color:var(--main-background-color) ;
 }
-.feature-caption {
+.feature-title {
   color: var(--main-title-color);
 font-weight: 700;
   line-height: calc(14 / 16);
   letter-spacing: 0.03em;
-  font-family: Roboto;
-font-style:  Bold;
+  font-size: 14px;
+  
 }
 .feature-advance {
   color: var(--second-title-color);
   font-weight: 400;
   line-height: calc(14 / 24);
   letter-spacing: 0.03em;
-  font-family: Roboto;
-font-style: Regular;
-
+  font-size: 14px;
+  
 }
 
 /* /photo section about*/
 
-.about-title {
-  color: var(--main-title-color);
-  font-weight: 700;
-  font-family: "Roboto";
-font-style: Bold;
+.section-title {
 font-size: 36px;
-letter-spacing: 0,03;
+letter-spacing: 0.03em;
  line-height: calc( 42 / 36 );
 }
-.background-section {
+.section-title {
   background-color: var(--second-background-color);
 }
 
@@ -164,11 +171,7 @@ letter-spacing: 0,03;
    background-color:var(--second-background-color)
 }
 .team-title {
-  color:var(--main-title-color) ;
-  font-family: Roboto;
-font-style: Bold;
 font-size: 36px;
-font-weight: 700;
 letter-spacing: 0,03;
  line-height: calc( 42 / 36 );
 }
@@ -178,18 +181,14 @@ letter-spacing: 0,03;
 .team-name {
   color: var(--main-title-color);
   font-weight: 500;
-  font-family: "Roboto";
-font-style: Medium;
 font-size: 16px;
-letter-spacing: 0,03;
+letter-spacing: 0.03em;
  text-decoration: none;
  line-height:calc( 19 / 16 );
 }
 .team-profession {
   color: var(--second-title-color);
-  font-weight: 400;
-  font-family: Roboto;
-font-style: Regular;
+  font-weight: 40px;
 font-size: 16px;
 letter-spacing: 0,03;
  text-decoration: none;
@@ -201,19 +200,17 @@ letter-spacing: 0,03;
 
 
 .contacts-address-link {
-  font-family: Roboto;
-font-style: Regular;
 font-size: 14px;
-color: var(--colr-header);
-font-weight: 400;
-letter-spacing: 0,03;
+color: var(--color-header);
+font-style:  Regular;
+
+letter-spacing: 0.03em;
  text-decoration: none;
  line-height: calc( 24 / 14 );
+ font-style: normal;
 }
 .contacts-link {
   color: rgb(255, 255, 255, 0.6);
-  font-family: Roboto;
-font-style: Regular;
 font-size: 14px;
  font-weight: 500;
   letter-spacing: 0.02em;
@@ -230,11 +227,11 @@ font-size: 14px;
 }
 .title-web-footer {
   color: var(--color-logo-footer);
-  cursor: pointer;
   font-family : Raleway;
-font-style : Bold;
 line-height: calc( 31 / 26 );
 letter-spacing: 0.03em;
+font-weight: 700;
+font-size: 26px;
 }
 
 
@@ -246,47 +243,47 @@ letter-spacing: 0.03em;
   background-color:var(--colr-heder) ;
 }
 /* filter */
+
 .button-filter {
- font-family: Roboto;
-  font-weight: 500;
+ font-family:inherit;
   font-size: 16px;
   line-height: calc( 26 / 16);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--main-title-color);
-background-color: var( --second-btn-color);
+  color: var(--color-btn-text);
+background-color: var(--color-main-btn);
 }
 .button-filter:hover {
 background-color: var(--second-btn-color);
-  color: var(--colr-header);
+  color: var(--main-btn-color);
   
 }
 .button:focus {
-  color: var(--background-footer-color);
+  color: var(--colr-header);
 background-color: var(--second-btn-color);
 }
+.button-filter:active {
+  color:var(--second-btn-color);}
 
 /* project */
 
-.project-container {
-  background-color: var(--color-container); 
+ .project-container {
+   background-color: var(--color-container); 
 
-}
+ }
+
+
 .project-subtitle {
   line-height: calc( 36 / 18) ;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
-  font-family: Roboto;
-font-style: Bold;
 font-size: 18px;
 }
 .project-text {
   line-height: calc( 30 / 16 );
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-   font-family: Roboto;
-font-style: Regular;
 font-size: 18px;
 }
 
@@ -294,10 +291,8 @@ font-size: 18px;
   background-color:var(--background-footer-color);
 }
 .link-footer {
-  color: #ffffff;
+  color:var(--colr-header);
   position: absolute;
-font-family: Roboto;
-font-style: Regular;
   font-weight: 400;
   line-height: calc( 24 / 14 );
  letter-spacing: 0.03em;
