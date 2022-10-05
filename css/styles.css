@@ -20,7 +20,7 @@ body {
   background-color:var(--main-background-color);
   font-family: Roboto;
   font-size: 14px;
-  color: var(--color-header);
+
    color: var(--main-title-color);
  
 }
@@ -43,7 +43,10 @@ font-weight: 500;
 .nav-link:focus {
   color:var(--second-btn-color);
 }
-.title-web {
+.nav-link .studio:visited {
+color: var(--second-btn-color);
+}
+.logo-web {
   color: var(--color-logo);
   font-family : Raleway;
 line-height: calc( 31 / 26 );
@@ -54,11 +57,7 @@ font-size: 26px;
 .accent {
   color: var(--second-btn-color);
    cursor: pointer;
-  font-family : Raleway;
-font-style : Bold;
-line-height: calc( 31 / 26 );
-  letter-spacing: 0.03em;
-  font-weight: 700;
+ 
 }
 .contact-link {
   text-decoration: none;
@@ -74,16 +73,13 @@ color:var(--second-btn-color);
 .contact-link:focus {
   color:var(--second-btn-color);
 }
-.tel-link {
-font-size: 14px;
-color:var( --second-title-color)}
+.contact-link .number {
+color:var( --second-title-color);
+letter-spacing: 0.02em;
+font-weight: 500;
+ line-height: calc( 16 / 14 );
+}
 
-.tel-link:hover {
-  color:var(--second-btn-color);
-}
-.tel-link:focus {
-  color:var(--second-btn-color);
-}
 .hero-title {
   color:var(--color-header);
   font-weight: 900;
@@ -104,13 +100,13 @@ text-transform: uppercase;
   line-height: calc(26 / 16);
    letter-spacing: 0.03em;
     text-transform: uppercase;
-  background-color: var(--color-main-btn);
+  background-color: var(--second-btn-color);
   color: var(--colr-header);
   cursor: pointer;
 }
 .button-main:hover {
   color:var(--main-btn-color);
-  background-color: var(--second-btn-color);
+  background-color: var(--background-footer-color);
 }
 .button-main:focus {
   color:var(--second-btn-color);
@@ -139,18 +135,17 @@ color:var(--main-background-color) ;
 }
 .feature-title {
   color: var(--main-title-color);
-font-weight: 700;
-  line-height: calc(14 / 16);
+line-height: calc(14 / 16);
   letter-spacing: 0.03em;
-  font-size: 14px;
+  font-size: 14px;}
   
-}
+
 .feature-advance {
   color: var(--second-title-color);
-  font-weight: 400;
+ 
   line-height: calc(14 / 24);
   letter-spacing: 0.03em;
-  font-size: 14px;
+ 
   
 }
 
@@ -179,7 +174,7 @@ letter-spacing: 0,03;
 
 
 .team-name {
-  color: var(--main-title-color);
+ 
   font-weight: 500;
 font-size: 16px;
 letter-spacing: 0.03em;
@@ -188,10 +183,10 @@ letter-spacing: 0.03em;
 }
 .team-profession {
   color: var(--second-title-color);
-  font-weight: 40px;
+ 
 font-size: 16px;
-letter-spacing: 0,03;
- text-decoration: none;
+letter-spacing: 0.03em;
+ 
  line-height: calc( 19 / 16 );
  
 }
@@ -200,9 +195,8 @@ letter-spacing: 0,03;
 
 
 .contacts-address-link {
-font-size: 14px;
+
 color: var(--color-header);
-font-style:  Regular;
 
 letter-spacing: 0.03em;
  text-decoration: none;
@@ -211,8 +205,8 @@ letter-spacing: 0.03em;
 }
 .contacts-link {
   color: rgb(255, 255, 255, 0.6);
-font-size: 14px;
- font-weight: 500;
+font-style: normal;
+ font-weight: 400;
   letter-spacing: 0.02em;
   line-height: calc( 16 / 14 );
   text-decoration: none;
@@ -225,7 +219,7 @@ font-size: 14px;
 .footer {
    background-color: var(--background-footer-color);
 }
-.title-web-footer {
+.logo-web-footer {
   color: var(--color-logo-footer);
   font-family : Raleway;
 line-height: calc( 31 / 26 );
@@ -242,6 +236,9 @@ font-size: 26px;
 .nav-header {
   background-color:var(--colr-heder) ;
 }
+.nav-link .portfolio:visited {
+  color: var(--second-btn-color);
+}
 /* filter */
 
 .button-filter {
@@ -249,7 +246,7 @@ font-size: 26px;
   font-size: 16px;
   line-height: calc( 26 / 16);
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+ font-weight: 500;
   cursor: pointer;
   color: var(--color-btn-text);
 background-color: var(--color-main-btn);
@@ -284,7 +281,7 @@ font-size: 18px;
   line-height: calc( 30 / 16 );
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-font-size: 18px;
+font-size: 16px;
 }
 
 .footer {
