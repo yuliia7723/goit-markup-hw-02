@@ -12,7 +12,7 @@
 --color-logo-footer:#FFFFFF;
 --color-main-btn:#F5F5F5;
 --color-btn-text:#212121;
-
+--color-main-title:#FFFFFF;
 }
 /* /главная страница */
 
@@ -56,7 +56,7 @@ font-size: 26px;
 }
 .accent {
   color: var(--second-btn-color);
-   cursor: pointer;
+  
  
 }
 .contact-link {
@@ -85,8 +85,7 @@ font-weight: 500;
   font-weight: 900;
   line-height: calc( 60 / 44 );
   letter-spacing: 0.06em;
-  background-color: var(--background-footer-color);
-  font-size: 44px;
+font-size: 44px;
 text-transform: uppercase;
 }
 .hero {
@@ -99,9 +98,8 @@ text-transform: uppercase;
   font-size: 16px ;
   line-height: calc(26 / 16);
    letter-spacing: 0.03em;
-    text-transform: uppercase;
   background-color: var(--second-btn-color);
-  color: var(--colr-header);
+  color: var(--color-main-title);
   cursor: pointer;
 }
 .button-main:hover {
@@ -194,7 +192,7 @@ letter-spacing: 0.03em;
 /* addres */
 
 
-.contacts-address-link {
+.footer-contact-address-link {
 
 color: var(--color-header);
 
@@ -203,15 +201,14 @@ letter-spacing: 0.03em;
  line-height: calc( 24 / 14 );
  font-style: normal;
 }
-.contacts-link {
+.footer-contact-link {
   color: rgb(255, 255, 255, 0.6);
 font-style: normal;
- font-weight: 400;
   letter-spacing: 0.02em;
   line-height: calc( 16 / 14 );
   text-decoration: none;
 }
-.contacts-link:hover {
+.footer-contact-link:hover {
    color:var(--second-btn-color);
 }
 
